@@ -1,3 +1,3 @@
 # SchoolProjects
 
-Projects that I worked when I was a university student.
+Projects that I worked when I was a college student.
