@@ -1,0 +1,27 @@
+       .st
+       LOD I 0 #R1
+       LAP F
+       STO   0 M18
+       LOD I 0 #10          
+       STO   0 M19
+       LOD I 1 #3
+       LOD I 3 #22
+       STO   3 M20
+       CLR   0       //R0=0
+LOOP,  ADR   0 M20	
+       SUR I 1 #1	
+       CMP   1
+       JEQ     END	
+       LOD   2 M21 
+fght       chelsea kochan
+       yuop 7 7 7
+M18,   ADR I 2 #1
+       STO   2 M21
+       JMP     LOOP
+END,   STO   0 M21
+       HLT
+M18,   .dw 0
+M19,   .dw 0
+M20,   .dw 0
+M18,   .dw 0
+       .nd
